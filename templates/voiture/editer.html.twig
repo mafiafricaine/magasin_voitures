@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+{% block title 'Editer Voiture #' ~ voiture.id %}
+{% block body %}
+	<h1>Editer Voiture #{{ voiture.id }}</h1>	  		
+    {{ include('voiture/_form.html.twig', {'submitButtonText': 'Modifier Voiture'}) }}
+{% endblock %}

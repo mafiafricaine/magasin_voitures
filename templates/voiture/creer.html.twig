@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+{% block title 'Nouveau Voiture' %}
+{% block body %}
+    <h1>Creation d'une Voiture</h1>
+	{{ include('voiture/_form.html.twig', {'submitButtonText': 'Creer Voiture'}) }}
+{% endblock %}
